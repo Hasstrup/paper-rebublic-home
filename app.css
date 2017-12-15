@@ -22,8 +22,12 @@ body {
 
 }
 
+#app {
+  overflow: hidden;
+}
+
 #side-two {
-  overflow: scroll;
+  overflow: hidden;
 }
 
 #container-ting {
@@ -62,6 +66,10 @@ body {
   font-weight: bold;
   font-size: 40px;
 }
+#span-me2{
+
+  font-family: 'Yantramanav', sans-serif;
+}
 
 #hr-ting {
   height: 3px;
@@ -81,9 +89,90 @@ body {
   margin-left: 115px;
   font-family: 'Yantramanav', sans-serif;
   color: #909497  !important
+}
 
+#header {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 700px
+}
+
+#header-twitter{
+float: right;
+margin-right: 30px;
+color: '#48C9B0'
+}
+
+.header-tingg {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#header-logo{
+float: left;
+margin-left: 20px
 }
 
 #id-me {
-  font-size: 18px !important
+  font-size: 18px !important;
+  font-family: 'Yantramanav', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #side-two {
+    display: none;
+  }
+
+  #app {
+    overflow-y: hidden;
+    width: 500px;
+
+  }
+
+  #id-me {
+    font-size: 16px !important;
+  }
+
+  #side-one {
+    margin-left: -80px;
+    margin-top: 200px
+  }
+
+  #header-twitter{
+  position: absolute;
+margin-left: 400px;
+  margin-top: -10px
+  }
+
+  #span-me {
+    font-size: 30px
+  }
+
+  #span-me2 {
+    font-size: 20px
+  }
+
+  #hr-ting{
+    width: 100px;
+    height: 2px
+  }
+  .side-two {
+    display: none !important;
+  }
+  #home-row {
+    margin: 0 0 0 0;
+
+  }
+
+}
+
+@media only screen and (width: 1024px) {
+  #app {
+    overflow-y: hidden;
+  }
+
+  #side-one {
+    margin-left: -80px;
+    margin-top: 200px
+  }
 }

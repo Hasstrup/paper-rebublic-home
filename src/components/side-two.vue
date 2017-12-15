@@ -1,8 +1,8 @@
 <template>
-  <div class='row'>
+  <div class='row' id='side-two'>
     <div class='col-md-4 padding-0' v-for="post in posts">
       <div id='overlay' v-on:click="clicked" ></div>
-       <img class="img-fluid img-responsive "  v-bind:src="post.link" id='some-guy'/>
+       <img class="img-fluid img-responsive "  v-bind:src="post.thumbnail" id='some-guy'/>
     </div>
 
   </div>
@@ -20,8 +20,8 @@ export default {
     }
   },
   mounted: function () {
-    axios.get('http://hgognavtnecinv44.herokuapp.com/posts').then(response => {
-      this.posts = response.data.posts.reverse() })
+    axios.get('http://hgognavtnecinv44.herokuapp.com/api/posts').then(response => {
+      this.posts = response.data.posts.splice(0, 9) })
     },
   methods: {
     clicked: function() {

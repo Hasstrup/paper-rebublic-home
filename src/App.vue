@@ -9,7 +9,7 @@
 
       </div>
 
-      <div class='col-md-6'>
+      <div class='col-md-6 side-two'>
         <div id='side-two'>
           <side-two/>
         </div>
@@ -32,8 +32,8 @@ export default {
   },
   data: function () {
     return {
-      header1: 'Of Course',
-      header2: "It's not your phone, it's you"
+      header1: 'Lockscreen Magic',
+      header2: "and a tiny dash of awesome"
     }},
 
   events: {
@@ -41,7 +41,7 @@ export default {
     alert('clicked me')
     }
   },
-  
+
 
   created: function() {
     this.$on('clicked_me', function(){
@@ -54,8 +54,8 @@ export default {
 methods: {
       change_back: function(){
         setTimeout(() =>  {
-        this.header1 = 'Of Course',
-        this.header2 = "It's not your phone, it's you"
+        this.header1 = 'Download',
+        this.header2 = "Get Paperstack from the store now"
       }, 2000)
     }}
 
