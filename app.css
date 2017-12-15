@@ -1,7 +1,18 @@
+
+
+@keyframes fade-in {
+  0% {opacity: 0.2}
+  100% {opacity: 1.0}
+}
+
 body {
   background-color: white;
   color: #111010 !important;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
+
 #home-row {
   margin: 0 -20px -20px 0;
 
@@ -64,11 +75,12 @@ body {
 
   font-family: 'Yantramanav', sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 32px !important;
 }
 #span-me2{
 
   font-family: 'Yantramanav', sans-serif;
+  font-size: 20px !important
 }
 
 #hr-ting {
@@ -117,20 +129,50 @@ margin-left: 20px
   font-family: 'Yantramanav', sans-serif;
 }
 
+#i-twitter {
+  height: 32px;
+  width: 32px
+}
+
+
+
 @media only screen and (max-width: 768px) {
+
+  #span-me{
+
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: bold;
+    font-size: 26px !important;
+  }
+  #span-me2{
+
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px !important
+  }
 
   #side-two {
     display: none;
   }
 
+  #id-me {
+    font-size: 14px !important;
+    font-family: 'Yantramanav', sans-serif;
+  }
+
   #app {
-    overflow-y: hidden;
-    width: 500px;
+    overflow: hidden;
+    width: 400px;
 
   }
 
-  #id-me {
-    font-size: 16px !important;
+  #i-twitter {
+    height: 24px;
+    width: 24px
+  }
+
+  .header-tingg {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px
   }
 
   #side-one {
@@ -140,10 +182,19 @@ margin-left: 20px
 
   #header-twitter{
   position: absolute;
-margin-left: 400px;
+margin-left: 350px;
   margin-top: -10px
   }
 
+  #header-logo{
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+  }
+
+  .header-tingg {
+    font-size: 14px !important
+  }
   #span-me {
     font-size: 30px
   }
@@ -159,10 +210,20 @@ margin-left: 400px;
   .side-two {
     display: none !important;
   }
-  #home-row {
-    margin: 0 0 0 0;
 
+  #home-row {
+    margin: 0 0 0 0; }
+
+#container-ting {
+      margin-left: 120px;
+      justify-content: flex-end;
+      text-align: left;
   }
+
+  .wrapper {
+    margin-left: -20px
+  }
+
 
 }
 
